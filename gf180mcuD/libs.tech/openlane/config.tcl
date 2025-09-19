@@ -87,9 +87,15 @@ set ::env(PAD_FILLERS) "\
 
 # Pad io terminals (if needed)
 set ::env(PAD_PLACE_IO_TERMINALS) "\
-    $::env(IO_PAD_LIBRARY)__*/PAD\
-    $::env(IO_PAD_LIBRARY)__dvss*/DVSS\
-    $::env(IO_PAD_LIBRARY)__dvdd*/DVDD\
+    $::env(IO_PAD_LIBRARY)__asig_5p0/ASIG5V\
+    $::env(IO_PAD_LIBRARY)__bi_24t/PAD\
+    $::env(IO_PAD_LIBRARY)__bi_t/PAD\
+    $::env(IO_PAD_LIBRARY)__in_c/PAD\
+    $::env(IO_PAD_LIBRARY)__in_s/PAD\
+    $::env(IO_PAD_LIBRARY)__dvss/DVSS\
+    $::env(IO_PAD_LIBRARY)__dvdd/DVDD\
+    gf180mcu_ws_io__dvss/DVSS\
+    gf180mcu_ws_io__dvdd/DVDD\
 "
 
 # Pad sites to edge offset
