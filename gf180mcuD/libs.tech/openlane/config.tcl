@@ -52,8 +52,11 @@ set ::env(CELL_CDLS)	"$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBR
 # Pad views
 set ::env(PAD_LEFS) [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/lef/*.lef"]
 # Unfortunately the foundry library must be read in before the ef or ws library (ghost cell)
-# The glob however has the wrong order...
-set ::env(PAD_GDS) [lreverse [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/gds/*.gds"]]
+set ::env(PAD_GDS) "\
+    $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/gds/gf180mcu_fd_io.gds\
+    $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/gds/gf180mcu_ef_io.gds\
+    $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/gds/gf180mcu_ws_io.gds\
+"
 set ::env(PAD_VERILOG_MODELS) [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/verilog/*__blackbox.v"]
 set ::env(PAD_SPICE_MODELS) [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/spice/*.spice"]
 set ::env(PAD_CDLS) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(IO_PAD_LIBRARY)/cdl/$::env(IO_PAD_LIBRARY).cdl"
