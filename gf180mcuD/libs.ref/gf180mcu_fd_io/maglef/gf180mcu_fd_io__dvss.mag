@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1759194789
 << nwell >>
 rect 612 13439 14388 69055
 << obsm1 >>
@@ -288,8 +288,8 @@ rect 14800 20400 15000 23400
 rect 14800 17200 15000 20200
 rect 14800 14000 15000 17000
 << obsm5 >>
-rect 300 13900 14700 69678
-rect 200 0 14800 13900
+rect 320 13880 14680 69678
+rect 200 0 14800 13880
 << labels >>
 rlabel metal5 s 14800 23600 15000 25000 6 DVDD
 port 1 nsew power bidirectional
@@ -621,7 +621,7 @@ string LEFclass PAD POWER
 string LEFsite GF_IO_Site
 string LEFsymmetry X Y R90
 string LEFview TRUE
-string GDS_END 4985370
+string GDS_END 4986392
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds
-string GDS_START 4981582
+string GDS_START 4982604
 << end >>

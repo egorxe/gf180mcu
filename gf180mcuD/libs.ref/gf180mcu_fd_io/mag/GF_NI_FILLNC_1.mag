@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1759194789
 << psubdiff >>
 rect 0 13097 20 69968
 << metal1 >>
@@ -91,7 +91,7 @@ rlabel metal3 s 9 24284 9 24284 4 DVDD
 port 4 nsew
 << properties >>
 string FIXED_BBOX 0 0 20 70000
-string GDS_END 17622592
+string GDS_END 17624750
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds
-string GDS_START 17619500
+string GDS_START 17621658
 << end >>

@@ -1,8 +1,8 @@
 magic
 tech gf180mcuD
-timestamp 1755724134
+timestamp 1759194789
 << properties >>
-string GDS_END 7138024
+string GDS_END 7140182
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds
-string GDS_START 7137060
+string GDS_START 7139218
 << end >>

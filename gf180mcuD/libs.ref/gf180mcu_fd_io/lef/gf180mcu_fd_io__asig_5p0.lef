@@ -809,8 +809,8 @@ MACRO gf180mcu_fd_io__asig_5p0
         RECT 1.300 69.700 73.700 85.300 ;
         RECT 1.000 0.000 74.000 69.700 ;
       LAYER Metal5 ;
-        RECT 1.500 69.500 73.500 348.390 ;
-        RECT 1.000 0.000 74.000 69.500 ;
+        RECT 1.600 69.400 73.400 348.390 ;
+        RECT 1.000 0.000 74.000 69.400 ;
   END
 END gf180mcu_fd_io__asig_5p0
 END LIBRARY

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1759194789
 << nwell >>
 rect 758 14151 14242 68951
 << obsm1 >>
@@ -292,8 +292,8 @@ rect 14800 20400 15000 23400
 rect 14800 17200 15000 20200
 rect 14800 14000 15000 17000
 << obsm5 >>
-rect 300 13900 14700 69678
-rect 200 0 14800 13900
+rect 320 13880 14680 69678
+rect 200 0 14800 13880
 << labels >>
 rlabel metal2 s 3068 26874 3576 70000 6 ASIG5V
 port 1 nsew signal bidirectional

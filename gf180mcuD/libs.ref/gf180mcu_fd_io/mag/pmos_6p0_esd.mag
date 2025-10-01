@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1759194789
 << nwell >>
 rect 0 12 1196 12252
 << mvpmos >>
@@ -30,7 +30,7 @@ rect 133 132 179 145
 rect 1017 12119 1063 12132
 rect 1017 132 1063 145
 << properties >>
-string GDS_END 2575194
+string GDS_END 2576216
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds
-string GDS_START 2558422
+string GDS_START 2559444
 << end >>

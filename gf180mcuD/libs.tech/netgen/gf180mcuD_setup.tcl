@@ -281,9 +281,7 @@ foreach dev $devices {
 }
 
 #-----------------------------------------------
-# Fixed-layout devices
-# NPN bipolar transistors,
-# sandwich (MoM) capacitors, and MiM capacitors
+# NPN and PNP bipolar transistors
 #-----------------------------------------------
 
 set devices {}
@@ -298,8 +296,6 @@ lappend devices pnp_05p00x00p42
 lappend devices pnp_10p00x10p00
 lappend devices pnp_05p00x05p00
 
-lappend devices cap_mim_2f0_m4m5_noshield
-
 foreach dev $devices {
     if {[lsearch $cells1 $dev] >= 0} {
 	property "-circuit1 $dev" parallel enable
@@ -312,6 +308,38 @@ foreach dev $devices {
 	property "-circuit2 $dev" delete par1
     }
 }
+
+#-----------------------------------------------
+# MiM capacitors
+#-----------------------------------------------
+
+set devices {}
+# NOTE: cap_mim_2f0fF is a generic version of the
+# "noshield" names;  they are the same model, given
+# the specific metal stack.
+lappend devices cap_mim_2f0fF
+
+lappend devices cap_mim_2f0_m4m5_noshield
+
+foreach dev $devices {
+    if {[lsearch $cells1 $dev] >= 0} {
+	property "-circuit1 $dev" parallel enable
+	property "-circuit1 $dev" tolerance {c_width 0.01} {c_length 0.01}
+	# Ignore these properties
+	property "-circuit1 $dev" delete par1
+    }
+    if {[lsearch $cells2 $dev] >= 0} {
+	property "-circuit2 $dev" parallel enable
+	property "-circuit2 $dev" tolerance {c_width 0.01} {c_length 0.01}
+	# Ignore these properties
+	property "-circuit2 $dev" delete par1
+    }
+}
+
+# Ensure that the specific MiM cap model and non-specific MiM cap model will
+# be matched if they differ in the two netlists.
+equate classes "-circuit1 cap_mim_2f0_m4m5_noshield" "-circuit2 cap_mim_2f0fF"
+equate classes "-circuit1 cap_mim_2f0fF" "-circuit2 cap_mim_2f0_m4m5_noshield"
 
 #---------------------------------------------------------------
 # Digital cells (ignore decap, fill, and tap cells)

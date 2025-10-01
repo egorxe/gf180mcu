@@ -761,7 +761,7 @@ MACRO gf180mcu_fd_io__fill5
         RECT 1.000 85.300 4.000 85.700 ;
         RECT 1.300 70.000 3.700 85.300 ;
       LAYER Metal5 ;
-        RECT 1.500 70.000 3.500 348.390 ;
+        RECT 1.600 70.000 3.400 348.390 ;
   END
 END gf180mcu_fd_io__fill5
 END LIBRARY
