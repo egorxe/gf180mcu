@@ -426,7 +426,6 @@ logger.info('Running all DUMMY rules') if DUMMY
 # %include rule_decks/dnwell_split.drc
 # %include rule_decks/drc_bjt.drc
 # %include rule_decks/dualgate.drc
-# %include rule_decks/dummy_exclude.drc
 # %include rule_decks/efuse.drc
 # %include rule_decks/esd.drc
 # %include rule_decks/geom.drc
@@ -474,6 +473,9 @@ logger.info('Running all DUMMY rules') if DUMMY
 # %include rule_decks/via4_split.drc
 # %include rule_decks/via5.drc
 # %include rule_decks/ymtp_mk.drc
+
+# Always enabled
+# %include rule_decks/dummy_exclude.drc
 
 # %include rule_decks/dummy_comp.drc
 # %include rule_decks/dummy_poly2.drc
