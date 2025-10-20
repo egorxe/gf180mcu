@@ -176,7 +176,7 @@ logger.info("BEOL enabled: #{BEOL}")
 # DUMMY
 DUMMY = bool_check?($dummy)
 
-logger.info("BEOL enabled: #{BEOL}")
+logger.info("DUMMY enabled: #{DUMMY}")
 
 ## SLOW_VIA
 SLOW_VIA = bool_check?($slow_via)
@@ -430,7 +430,6 @@ logger.info('Running all DUMMY rules') if DUMMY
 # %include rule_decks/esd.drc
 # %include rule_decks/geom.drc
 # %include rule_decks/hres.drc
-# %include rule_decks/layers_def.drc
 # %include rule_decks/ldnmos.drc
 # %include rule_decks/ldnmos_split.drc
 # %include rule_decks/ldpmos.drc
