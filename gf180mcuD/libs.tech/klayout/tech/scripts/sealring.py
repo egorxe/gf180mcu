@@ -44,15 +44,15 @@ except ImportError:
 
 
 @click.command()
-@click.option("--input-gds")
-@click.option("--output-gds")
+@click.option("--input")
+@click.option("--output")
 @click.option("--die-width", type=float)
 @click.option("--die-height", type=float)
-def cli(input_gds, output_gds, die_width, die_height):
+def cli(input, output, die_width, die_height):
 
     # Load input layout
     layout = pya.Layout()
-    layout.read(input_gds)
+    layout.read(input)
     top = layout.top_cell()
 
     # Create the PCell
@@ -77,7 +77,7 @@ def cli(input_gds, output_gds, die_width, die_height):
     options.write_context_info = False
 
     # Save output layout
-    layout.write(output_gds, options)
+    layout.write(output, options)
 
 
 if __name__ == "__main__":
