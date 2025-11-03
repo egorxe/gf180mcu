@@ -44,3 +44,5 @@ set ::env(PAD_PLACE_IO_TERMINALS) "\
 
 # Pad sites to edge offset
 set ::env(PAD_EDGE_SPACING) "26"
+
+set ::env(KLAYOUT_SEALRING_SCRIPT) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/klayout/tech/scripts/sealring.py"
