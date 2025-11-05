@@ -1,20 +1,20 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1762296095
 << nwell >>
 rect -68 622 668 968
 << pwell >>
 rect -68 -68 668 622
-<< mvnmos >>
+<< srammvnfet >>
 rect 126 342 246 532
 rect 354 342 474 532
 rect 36 52 156 206
 rect 444 52 564 206
-<< mvpmos >>
+<< srammvpfet >>
 rect 126 712 246 832
 rect 354 712 474 832
-<< mvndiff >>
+<< srammvndiff >>
 rect 36 413 126 532
 rect 36 367 49 413
 rect 95 367 126 413
@@ -40,7 +40,7 @@ rect 444 23 564 52
 rect 444 -23 481 23
 rect 527 -23 564 23
 rect 444 -42 564 -23
-<< mvpdiff >>
+<< srammvpdiff >>
 rect 270 923 330 942
 rect 270 877 277 923
 rect 323 877 330 923
@@ -54,13 +54,13 @@ rect 474 771 564 832
 rect 474 725 505 771
 rect 551 725 564 771
 rect 474 712 564 725
-<< mvndiffc >>
+<< srammvndc >>
 rect 49 367 95 413
 rect 505 367 551 413
 rect 277 285 323 331
 rect 73 -23 119 23
 rect 481 -23 527 23
-<< mvpdiffc >>
+<< srammvpdc >>
 rect 277 877 323 923
 rect 49 725 95 771
 rect 505 725 551 771
@@ -148,7 +148,7 @@ rect 390 -50 510 -26
 rect -36 330 636 690
 << properties >>
 string FIXED_BBOX -68 -68 668 968
-string GDS_END 715776
+string GDS_END 715712
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram256x8m8wm1.gds
-string GDS_START 713292
+string GDS_START 713228
 << end >>

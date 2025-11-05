@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1762296095
 << polysilicon >>
 rect 22205 9106 22518 9125
 rect 22205 8971 22453 9106
@@ -217,266 +217,266 @@ rect -636 101 22447 261
 rect 22503 101 22540 261
 rect -636 77 22540 101
 use 018SRAM_cell1_64x8m81  018SRAM_cell1_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_64x8m81  018SRAM_cell1_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 -1 9177
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 1 1977
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 1 3777
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_2
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 1 5577
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_3
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 1 7377
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_4
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 -1 7377
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_5
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 -1 5577
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_6
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 -1 1977
 box -68 -68 668 968
 use 018SRAM_cell1_cutPC_64x8m81  018SRAM_cell1_cutPC_64x8m81_7
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 22262 0 -1 3777
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 16862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 17462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_2
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 18662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_3
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 18062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_4
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 19262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_5
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 19862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_6
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 20462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_7
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 21062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_8
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 15662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_9
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 15062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_10
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 14462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_11
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 13862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_12
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 12662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_13
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 13262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_14
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 12062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_15
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 11462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_16
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 6662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_17
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 7862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_18
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 7262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_19
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 8462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_20
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 9062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_21
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 9662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_22
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 10262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_23
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 4862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_24
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 4262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_25
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 3662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_26
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 3062 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_27
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 1862 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_28
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 2462 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_29
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 1262 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_30
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 662 0 1 177
 box -68 -68 668 968
 use 018SRAM_cell1_dummy_64x8m81  018SRAM_cell1_dummy_64x8m81_31
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 6062 0 1 177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 16262 0 1 177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 10862 0 1 177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_2
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 5462 0 1 177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_3
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 62 0 1 177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_4
-timestamp 1755724134
+timestamp 1762296095
 transform -1 0 62 0 -1 9177
 box -68 -68 668 968
 use 018SRAM_strap1_64x8m81  018SRAM_strap1_64x8m81_5
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 21062 0 1 177
 box -68 -68 668 968
 use M1_POLY2$$44754988_64x8m81  M1_POLY2$$44754988_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22477 0 -1 417
 box 0 0 1 1
 use M1_POLY2$$44754988_64x8m81  M1_POLY2$$44754988_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22477 0 -1 7377
 box 0 0 1 1
 use M1_POLY2$$44754988_64x8m81  M1_POLY2$$44754988_64x8m81_2
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22477 0 -1 5577
 box 0 0 1 1
 use M1_POLY2$$44754988_64x8m81  M1_POLY2$$44754988_64x8m81_3
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22477 0 -1 1977
 box 0 0 1 1
 use M1_POLY2$$44754988_64x8m81  M1_POLY2$$44754988_64x8m81_4
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22477 0 -1 3777
 box 0 0 1 1
 use M1_POLY24310589983242_64x8m81  M1_POLY24310589983242_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22476 0 1 9036
 box 0 0 1 1
 use M2_M1$$43375660_64x8m81  M2_M1$$43375660_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 -1 3779
 box 0 0 1 1
 use M2_M1$$43375660_64x8m81  M2_M1$$43375660_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 -1 1975
 box 0 0 1 1
 use M2_M1$$43375660_64x8m81  M2_M1$$43375660_64x8m81_2
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 -1 5575
 box 0 0 1 1
 use M2_M1$$43375660_64x8m81  M2_M1$$43375660_64x8m81_3
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 -1 7379
 box 0 0 1 1
 use M2_M1431058998329_64x8m81  M2_M1431058998329_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 1 379
 box 0 0 1 1
 use M2_M14310589983233_64x8m81  M2_M14310589983233_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22476 0 1 8975
 box 0 0 1 1
 use M3_M2431058998321_64x8m81  M3_M2431058998321_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22475 0 1 181
 box 0 0 1 1
 use M3_M2431058998321_64x8m81  M3_M2431058998321_64x8m81_1
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 22476 0 1 9178
 box 0 0 1 1
 use new_dummyrow_unit_01_64x8m81  new_dummyrow_unit_01_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 0 0 -1 9354
 box -6 109 10930 1145
 use new_dummyrow_unit_64x8m81  new_dummyrow_unit_64x8m81_0
-timestamp 1755724134
+timestamp 1762296095
 transform 1 0 10800 0 -1 9354
 box -6 109 10930 1145
 << labels >>
 rlabel metal3 s 22196 1995 22196 1995 4 VSS
 rlabel metal3 s 22196 1070 22196 1070 4 VDD
 << properties >>
-string GDS_END 1246482
+string GDS_END 1246290
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram64x8m8wm1.gds
-string GDS_START 1241348
+string GDS_START 1241156
 << end >>

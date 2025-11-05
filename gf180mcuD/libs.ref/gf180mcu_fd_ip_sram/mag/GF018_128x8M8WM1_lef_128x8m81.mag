@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755724134
+timestamp 1762296095
 << metal2 >>
 rect 1864 0 2088 200
 rect 2539 0 2763 200
@@ -670,8 +670,8 @@ flabel metal2 s 53884 100 53884 100 0 FreeSans 400 0 0 0 A[6]
 port 36 nsew
 << properties >>
 string FIXED_BBOX 0 0 86372 53776
-string GDS_END 2264198
+string GDS_END 2263942
 string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram128x8m8wm1.gds
-string GDS_START 2235494
+string GDS_START 2235238
 string path 63.580 0.000 63.580 1.000 
 << end >>
