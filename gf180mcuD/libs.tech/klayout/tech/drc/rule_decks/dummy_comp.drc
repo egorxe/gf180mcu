@@ -73,6 +73,12 @@ if DUMMY
   dcf8a_l1.output('DCF.8a', 'DCF.8a : Space from dummy COMP to Resistor marking layer (RES_MK): 3.5')
   dcf8a_l1.forget
 
+  # Rule DCF.11a: Space from dummy COMP to dummy COMP excluding layer (NDMY): 3.5
+  logger.info('Executing rule DCF.11a')
+  dcf11a_l1 = comp_dummy.separation(ndmy, 3.5.um, euclidian)
+  dcf11a_l1.output('DCF.11a', 'DCF.11a : Space from dummy COMP to dummy COMP excluding layer (NDMY): 3.5')
+  dcf11a_l1.forget
+
   # Rule DCF.12: Minimum dummy COMP space to IND_MK layer: 3
   logger.info('Executing rule DCF.12')
   dcf12_l1 = comp_dummy.separation(ind_mk, 3.um, euclidian)
