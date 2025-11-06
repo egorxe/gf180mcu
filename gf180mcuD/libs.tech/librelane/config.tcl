@@ -198,22 +198,22 @@ dict set ::env(LAYERS_RC) "*" Metal4 cap 1.50688E-04
 dict set ::env(LAYERS_RC) "*" Metal5 res 7.92778E-05
 dict set ::env(LAYERS_RC) "*" Metal5 cap 1.55595E-04
 
-# Worst case
-set ::env(VIAS_RC) [dict create]
-dict set ::env(VIAS_RC) "*" Via1 16.845
-dict set ::env(VIAS_RC) "*" Via2 16.845
-dict set ::env(VIAS_RC) "*" Via3 16.845
-dict set ::env(VIAS_RC) "*" Via4 16.845
+set ::env(VIAS_R) [dict create]
 
-# Best case
-#set ::env(VIAS_RC) [dict create]
-#dict set ::env(VIAS_RC) "*" Via1 4.23
-#dict set ::env(VIAS_RC) "*" Via2 4.23
-#dict set ::env(VIAS_RC) "*" Via3 4.23
-#dict set ::env(VIAS_RC) "*" Via4 4.23
+# Best case (and used for nom)
+dict set ::env(VIAS_R) "*" Via1 res 4.23
+dict set ::env(VIAS_R) "*" Via2 res 4.23
+dict set ::env(VIAS_R) "*" Via3 res 4.23
+dict set ::env(VIAS_R) "*" Via4 res 4.23
 
-set ::env(SIGNAL_WIRE_RC_LAYERS) "Metal2"
-set ::env(CLOCK_WIRE_RC_LAYERS) "Metal4"
+# Worst case (last one wins)
+dict set ::env(VIAS_R) "max_*" Via1 res 16.845
+dict set ::env(VIAS_R) "max_*" Via2 res 16.845
+dict set ::env(VIAS_R) "max_*" Via3 res 16.845
+dict set ::env(VIAS_R) "max_*" Via4 res 16.845
+
+set ::env(SIGNAL_WIRE_RC_LAYERS) "Metal2 Metal3 Metal4"
+set ::env(CLOCK_WIRE_RC_LAYERS) "Metal2 Metal3 Metal4"
 
 # Base SDC
 
