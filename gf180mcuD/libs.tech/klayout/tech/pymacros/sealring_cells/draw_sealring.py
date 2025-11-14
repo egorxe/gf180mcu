@@ -23,8 +23,6 @@ c2c_spacing = 0.7
 # via to via spacing
 v2v_spacing = 0.7
 
-pplus_comp_overlap = 0.03
-
 # When doing flip-chip packaging, the guard ring needs to be protected
 # If not, pad opening is required
 
@@ -32,7 +30,9 @@ pplus_comp_overlap = 0.03
 
 solid_layers_table = {
     "bonding": [
-        {"layer": Layers.COMP, "start": 0+pplus_comp_overlap, "end": 16-pplus_comp_overlap},
+        # Pad (Passivation) opening
+        {"layer": Layers.Pad, "start": 4, "end": 13},
+        {"layer": Layers.COMP, "start": 0, "end": 16},
         {"layer": Layers.Pplus, "start": 0, "end": 16},
         {"layer": Layers.GUARD_RING_MK, "start": 0, "end": 16},
         {"layer": Layers.Metal1, "start": 1, "end": 16},
@@ -41,11 +41,9 @@ solid_layers_table = {
         {"layer": Layers.Metal4, "start": 0, "end": 16},
         {"layer": Layers.Metal5, "start": 1, "end": 16},
         {"layer": Layers.MetalTop, "start": 0, "end": 16},
-        # Pad (Passivation) opening
-        {"layer": Layers.Pad, "start": 4, "end": 13},
     ],
     "flip-chip": [
-        {"layer": Layers.COMP, "start": 0+pplus_comp_overlap, "end": 16-pplus_comp_overlap},
+        {"layer": Layers.COMP, "start": 0, "end": 16},
         {"layer": Layers.Pplus, "start": 0, "end": 16},
         {"layer": Layers.GUARD_RING_MK, "start": 0, "end": 16},
         {"layer": Layers.Metal1, "start": 1, "end": 13},
@@ -59,71 +57,168 @@ solid_layers_table = {
 
 corner_polygons = {
     "bonding": {
-        Layers.COMP: [pya.DPoint(0+pplus_comp_overlap, 16), pya.DPoint(16-pplus_comp_overlap, 16), pya.DPoint(16, 16-pplus_comp_overlap), pya.DPoint(16, 0+pplus_comp_overlap)],
-        Layers.Pplus: [pya.DPoint(0, 16), pya.DPoint(16, 16), pya.DPoint(16, 0)],
-        Layers.GUARD_RING_MK: [
-            pya.DPoint(0, 16),
-            pya.DPoint(16, 16),
-            pya.DPoint(16, 0),
-        ],
-        Layers.Metal1: [
-            pya.DPoint(0, 16),
-            pya.DPoint(15, 16),
-            pya.DPoint(16, 15),
-            pya.DPoint(16, 0),
-        ],
-        Layers.Metal2: [pya.DPoint(0, 16), pya.DPoint(16, 16), pya.DPoint(16, 0)],
-        Layers.Metal3: [
-            pya.DPoint(0, 16),
-            pya.DPoint(15, 16),
-            pya.DPoint(16, 15),
-            pya.DPoint(16, 0),
-        ],
-        Layers.Metal4: [pya.DPoint(0, 16), pya.DPoint(16, 16), pya.DPoint(16, 0)],
-        Layers.Metal5: [
-            pya.DPoint(0, 16),
-            pya.DPoint(15, 16),
-            pya.DPoint(16, 15),
-            pya.DPoint(16, 0),
-        ],
-        Layers.MetalTop: [pya.DPoint(0, 16), pya.DPoint(16, 16), pya.DPoint(16, 0)],
         # Pad (Passivation) opening
         Layers.Pad: [
             pya.DPoint(3, 16),
             pya.DPoint(12, 16),
             pya.DPoint(16, 12),
             pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 4, 3),
+            pya.DPoint(3, 16 - 4),
         ],
-    },
-    "flip-chip": {
-        Layers.COMP: [pya.DPoint(0+pplus_comp_overlap, 16), pya.DPoint(16-pplus_comp_overlap, 16), pya.DPoint(16, 16-pplus_comp_overlap), pya.DPoint(16, 0+pplus_comp_overlap)],
-        Layers.Pplus: [pya.DPoint(0, 16), pya.DPoint(16, 16), pya.DPoint(16, 0)],
+        Layers.COMP: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Pplus: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
         Layers.GUARD_RING_MK: [
             pya.DPoint(0, 16),
             pya.DPoint(16, 16),
             pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Metal1: [
+            pya.DPoint(0, 16),
+            pya.DPoint(15, 16),
+            pya.DPoint(16, 15),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Metal2: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Metal3: [
+            pya.DPoint(0, 16),
+            pya.DPoint(15, 16),
+            pya.DPoint(16, 15),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Metal4: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Metal5: [
+            pya.DPoint(0, 16),
+            pya.DPoint(15, 16),
+            pya.DPoint(16, 15),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.MetalTop: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+    },
+    "flip-chip": {
+        Layers.COMP: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.Pplus: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
+        ],
+        Layers.GUARD_RING_MK: [
+            pya.DPoint(0, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 0),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 0),
+            pya.DPoint(0, 16 - 7),
         ],
         Layers.Metal1: [
             pya.DPoint(3, 16),
             pya.DPoint(15, 16),
             pya.DPoint(16, 15),
             pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
         ],
-        Layers.Metal2: [pya.DPoint(3, 16), pya.DPoint(16, 16), pya.DPoint(16, 3)],
+        Layers.Metal2: [
+            pya.DPoint(3, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
+        ],
         Layers.Metal3: [
             pya.DPoint(3, 16),
             pya.DPoint(15, 16),
             pya.DPoint(16, 15),
             pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
         ],
-        Layers.Metal4: [pya.DPoint(3, 16), pya.DPoint(16, 16), pya.DPoint(16, 3)],
+        Layers.Metal4: [
+            pya.DPoint(3, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
+        ],
         Layers.Metal5: [
             pya.DPoint(3, 16),
             pya.DPoint(15, 16),
             pya.DPoint(16, 15),
             pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
         ],
-        Layers.MetalTop: [pya.DPoint(3, 16), pya.DPoint(16, 16), pya.DPoint(16, 3)],
+        Layers.MetalTop: [
+        pya.DPoint(3, 16),
+        pya.DPoint(16, 16),
+        pya.DPoint(16, 3),
+        # Extend based on thickness
+        pya.DPoint(16 - 7, 3),
+        pya.DPoint(3, 16 - 7),
+        ],
     },
 }
 

@@ -115,7 +115,7 @@ MIM_OPTION = $mim_option || 'B'
 logger.info("MIM Option selected: #{MIM_OPTION}")
 
 # OFFGRID
-OFFGRID = $offgrid != 'false'
+OFFGRID = bool_check?($offgrid)
 
 logger.info("Offgrid enabled:  #{OFFGRID}")
 
@@ -483,6 +483,8 @@ logger.info('Running all DUMMY rules') if DUMMY
 # %include rule_decks/dummy_metal3.drc
 # %include rule_decks/dummy_metal4.drc
 # %include rule_decks/dummy_metal5.drc
+
+# %include rule_decks/guard_ring.drc
 
 #================================================
 #-------------------- Tail ----------------------

@@ -76,8 +76,11 @@ tp.var("space_to_DNWELL", 2 / $ly.dbu)
 tp.var("space_to_LVPWELL", 1 / $ly.dbu)
 tp.var("space_to_Dualgate", 1 / $ly.dbu)
 
-# DPF.7
-tp.var("space_to_scribe_line", 25.7 / $ly.dbu)
+# DPF.7 / GR.2
+# DPF.7 specifies a minimum distance of 25.7 from dummy poly to the scribe line
+# GR.2 specifies a minimum distance of 10 from GUARD_RING_MK to prime die
+# Therefore, if GUARD_RING_MK is directly next to the scribe line, DPF.7 should actually be 26
+tp.var("space_to_scribe_line", 26 / $ly.dbu)
 
 # DPF.8
 tp.var("space_to_RES_MK", 19.7 / $ly.dbu)
