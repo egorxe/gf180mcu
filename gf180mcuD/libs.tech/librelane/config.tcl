@@ -52,9 +52,10 @@ set ::env(DEFAULT_CORNER) "nom_tt_025C_5v00"
 set ::env(TIMING_VIOLATION_CORNERS) "*tt*"
 
 # Technology LEF
-set ::env(TECH_LEF) [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__nom.tlef"]
-set ::env(TECH_LEF_MIN)  [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__min.tlef"]
-set ::env(TECH_LEF_MAX)  [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__max.tlef"]
+set ::env(TECH_LEFS) [dict create]
+dict set ::env(TECH_LEFS) nom_* [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__nom.tlef"]
+dict set ::env(TECH_LEFS) min_* [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__min.tlef"]
+dict set ::env(TECH_LEFS) max_* [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__max.tlef"]
 
 # Standard cells
 set ::env(CELL_LEFS) [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lef/*.lef"]
@@ -167,6 +168,7 @@ dict set ::env(KLAYOUT_DRC_OPTIONS) beol true
 dict set ::env(KLAYOUT_DRC_OPTIONS) dummy true
 dict set ::env(KLAYOUT_DRC_OPTIONS) offgrid true
 dict set ::env(KLAYOUT_DRC_OPTIONS) conn_drc true
+dict set ::env(KLAYOUT_DRC_OPTIONS) wedge true
 dict set ::env(KLAYOUT_DRC_OPTIONS) run_mode "deep"
 
 set ::env(KLAYOUT_DENSITY_RUNSET) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/klayout/tech/drc/rule_decks/density.drc"
