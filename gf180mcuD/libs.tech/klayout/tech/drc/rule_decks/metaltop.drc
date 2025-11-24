@@ -37,10 +37,10 @@ if BEOL
     mt2a_l1.output('MT.2a', 'MT.2a : min. metaltop spacing : 0.38µm')
     mt2a_l1.forget
 
-    # Rule MT.2b: Space to wide Metal2 (length & width > 10um) is 0.5µm
+    # Rule MT.2b: Space to wide metaltop (length & width > 10um) is 0.5µm
     logger.info('Executing rule MT.2b')
     wide_top_metal = top_metal.not_interacting(top_metal.edges.with_length(nil, 10.um))
-    mt2b_l1 = top_metal.separation(wide_top_metal, 0.5.um, euclidian)
+    mt2b_l1 = top_metal.sized(-5.um).sized(5.um) & top_metal
     mt2b_l1.output('MT.2b', 'MT.2b : Space to wide Metal2 (length & width > 10um) : 0.5µm')
     mt2b_l1.forget
     wide_top_metal.forget
