@@ -212,12 +212,12 @@ corner_polygons = {
             pya.DPoint(3, 16 - 7),
         ],
         Layers.MetalTop: [
-        pya.DPoint(3, 16),
-        pya.DPoint(16, 16),
-        pya.DPoint(16, 3),
-        # Extend based on thickness
-        pya.DPoint(16 - 7, 3),
-        pya.DPoint(3, 16 - 7),
+            pya.DPoint(3, 16),
+            pya.DPoint(16, 16),
+            pya.DPoint(16, 3),
+            # Extend based on thickness
+            pya.DPoint(16 - 7, 3),
+            pya.DPoint(3, 16 - 7),
         ],
     },
 }
@@ -361,6 +361,15 @@ def draw_sealring(layout, w, h, metal_level, sealring_type="bonding"):
         )
     )
 
+    # Flatten the cell and merge GUARD_RING_MK polygons
+    sealring_cell.flatten(0)
+    region = pya.Region(
+        sealring_cell.begin_shapes_rec(layout.layer(Layers.GUARD_RING_MK))
+    )
+    region.merge()
+    sealring_cell.clear(Layers.GUARD_RING_MK)
+    sealring_cell.shapes(Layers.GUARD_RING_MK).insert(region)
+
     return sealring_cell
 
 
@@ -390,7 +399,7 @@ def draw_sealring_edge(layout, h, metal_level, sealring_type="bonding"):
     for cur_dict in solid_layers_table[sealring_type]:
         layer, start, end = cur_dict.values()
         sealring_edge_cell.shapes(layer).insert(pya.DBox.new(start, 0, end, h))
-        
+
         if layer == max_metal:
             break
 
@@ -414,7 +423,7 @@ def draw_sealring_edge(layout, h, metal_level, sealring_type="bonding"):
                     (h - i * stagger) / (distance2 + size),
                 )
             )
-        
+
         if layer == max_via:
             break
 
