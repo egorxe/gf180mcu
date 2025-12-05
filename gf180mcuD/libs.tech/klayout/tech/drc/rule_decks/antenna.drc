@@ -426,7 +426,7 @@ polygons_count += count
 fusetop = get_polygons(75, 0)
 fusetop_count = fusetop.count
 logger.info("fusetop has #{fusetop_count} polygons")
-polygons_count += count
+polygons_count += fusetop_count
 
 if fusetop_count == 0
   logger.info('No polygons on fusetop layer, MIM antenna checks will be skipped.')
