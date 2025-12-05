@@ -401,7 +401,7 @@ thin_gate  = tgate.not(dualgate)
 thick_gate = tgate.and(dualgate)
 n_diode    = nplus.and(comp).not(nwell)
 p_diode    = pplus.and(comp).and(nwell)
-diodes     = n_diode | n_diode
+diodes     = n_diode | p_diode
 
 thin_gate_count   = thin_gate.count
 thick_gate_count  = thick_gate.count
