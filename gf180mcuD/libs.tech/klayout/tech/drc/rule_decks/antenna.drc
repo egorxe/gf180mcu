@@ -424,7 +424,9 @@ CHIP = extent.sized(0.0)
 logger.info('Starting GF180MCU ANTENNA DRC rules.')
 
 def antenna_check_gf180mcu(gate, antenna_layer, thickness, limit, diodes, mf)
-  expression = "var ar=(perimeter(antenna_layer) * thickness) / (area + mf * area(diodes)); skip(ar < limit)"
+  expression = "var garea = area; var darea = area(diodes); var per = perimeter(antenna_layer) * thickness; "\
+    "var ar = per / (garea + mf * darea); skip(ar < limit); "\
+    "put('GATE_AREA', garea); put('DIODES_AREA', darea); put('ANT_PERIMETER', per); put('RATIO', ar);"
   variables = { "thickness" => thickness, "mf" => mf, "limit" => limit}
   return evaluate_nets(gate, { "antenna_layer" => antenna_layer, "diodes" => diodes }, expression, variables)
 end
